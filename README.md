@@ -16,3 +16,7 @@ Added link.
 Added YouTube video.
 
 Added comment service from <strong>Disqus</strong>.
+
+Added chat service from <strong>tawk</strong>.
+
+Added <strong>Google analytic</strong>.

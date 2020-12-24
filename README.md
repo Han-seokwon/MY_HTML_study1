@@ -20,3 +20,10 @@ Added comment service from <strong>Disqus</strong>.
 Added chat service from <strong>tawk</strong>.
 
 Added <strong>Google analytic</strong>.
+
+----------------
+
+### 2020-12-24
+
+meta viewport set; "width=device-width, initial-scale=1.0"
+Added favicon

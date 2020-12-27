@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'
+    <meta charset='utf-8'>
   </head>
 <body>
 <!--  -->
@@ -165,6 +165,37 @@
   <input type='submit'>
 </form>
 
+
+</form>
+
+<!-- 자동완성 기능 활성/비활성화 -->
+<!-- placeholder 기능 -->
+<!-- 자동 포커스 모드 autofocus -->
+<h1>자동완성 기능 활성/비활성화</h1>
+<form action="auto.php" autocomplete=on> <!-- 모두 자동완성 기능 활성 -->
+  <p>ID : <input type='text' name='id' placeholder='ID를 입력해주세요' autofocus></p>
+  <p>PW : <input type='password' name='pwd' placeholder='password를 입력해주세요' autocomplete= off></p><!-- 이 부분만 자동완성 기능 비활성화 -->
+  <input type=submit>
+</form>
+
+<!-- 입력 값 체크(유효성 검사; Validation) -->
+<!-- 사용자가 내용을 잘 입력했는지, 악의적인 내용을 입력하지는 않았는지 확인 하는 기능-->
+<!-- 필수적으로 입력해야 하는 항목 required -->
+<!-- 특정한 규칙에 맞게만 입력이 가능하게 함 pattern ='정규표현식을 사용' -->
+<h1>입력 값 체크(유효성 검사; Validation)</h1>
+<form action="register.php">
+  <p>ID : <input type='text' name='id' placeholder='ID를 입력해주세요' required
+    pattern='[a-zA-Z].+[0-9]'></p>
+    <!-- [a-zA-Z] 알파벳 하나 입력 -->
+    <!-- [0-9] 숫자 하나 입력 -->
+    <!-- .을 찍으면 아무 문자나 하나 올 수 있음 -->
+    <!-- .+를 하면 아무거나 여러 개 입력         가능 -->
+  <p>PW : <input type='password' name='pwd' placeholder='password를 입력해주세요'></p>
+  <p>Email : <input type='email' name='email' placeholder='email을 입력해주세요'></p>
+  <input type=submit>
+</form>
+<!-- html의 입력 기능만으로 사용자가 입력한 정보를 너무 신뢰하면 안 됨 -->
+<!-- 복잡한 기술을 쓰면 정해진 것과 다르게 입력 가능, 서버에서 입력 정보를 엄격히 관리해야 함-->
 
 </body>
 </html>

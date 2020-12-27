@@ -43,6 +43,15 @@ Added favicon
 
 form tag study
 
+### 2020-12-27
+
+(HTML_study)
+
+form tag study + (autocomplete, pattern)
+
+input tag study
+
+
 
 
 

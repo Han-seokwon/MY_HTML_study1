@@ -2,19 +2,22 @@
 <html>
 <head>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RMV9WLWLMN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RMV9WLWLMN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-RMV9WLWLMN');
+    gtag('config', 'G-RMV9WLWLMN');
 
-</script>
+  </script>
+
   <title>Han-seokwon</title>
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <link rel='stylesheet' href='style.css'>
 
   <meta charset='utf-8'>
   <meta name='description' content='This website is Han-seokwon&apos;s porfolio.'>
@@ -23,131 +26,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-  <style>
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@700&display=swap');
 
-  body{
-    font-family: 'Fredoka One','sans-serif','나눔고딕';
-    background-color: #dcf5f7;
-    text-align:center
-    }
-
-  nav{
-
-  }
-    nav ul{
-      height:20%;
-      list-style:none;
-    }
-    nav li{
-
-      display:inline;
-      padding:10px;
-    }
-    nav a{
-      color: #5686c4;
-      font-size:160%;
-      border-bottom: 3px solid #5686c4;
-      text-decoration:none;
-    }
-
-
-  p{
-    font-family:'Open Sans', 'sans-serif','나눔고딕';
-  }
-
-
-  header h1{
-    border: 5px solid blue;
-    font-size: 400%;
-    padding:30px;
-
-  }
-  header a{
-
-    color:black;
-    text-decoration:none;
-  }
-  article{
-    padding-top: 100px;
-  }
-  h2{
-    padding-top: 100px;
-    font-size: 190%;
-    color:#942e2e;
-  }
-
-  footer{
-  padding-top: 300px;
-  padding-bottom: 50px;
-}
-
-  </style>
 </head>
 
 
 <body>
 
   <header>
+    <div class='header_wrap'>
     <h1><a href="index(for_css_study).html">Han-seokwon</a></h1>
+    <nav>
+      <div class='nav_index'>
+      <ul>
+        <li><a href="index(for_css_study).html#About me" >About me</a>
+        <li><a href="index(for_css_study).html#Programming language" >Programming language</a></li>
+        <li><a href="index(for_css_study).html#Contact">Contact</a></li>
+      </ul>
+    </div>
+    </nav>
+  </div>
+
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="index(for_css_study).html#About me" >About me</a>
-      <li><a href="index(for_css_study).html#Programming language" >Programming language</a></li>
-      <li><a href="index(for_css_study).html#Contact">Contact</a></li>
-    </ul>
-  </nav>
 
 
   <section >
-    <article>
-      <p>Though my website is pretty empty right now.</p>
-      <p>As I continue to study, just like I've done so far.</p>
-      <p>This place will be filled with my projects and achievements.</p>
-      <br>
+    <article id='INT'>
+      <div class='intro'>
+        <p>STDEAY LEARNER</p>
+        <p>CONSISTENT PLAYER</p>
+        <p>GOAL-ORIENTED</p>
+        <p>HARD WORKER</p>
+
+      </div>
     </article>
 
-    <article>
+    <article id='AM'>
       <a name='About me'></a>
       <h2>About me</h2>
-      <p> Currently I am studying at <a href='https://www.koreatech.ac.kr/kor/Main.do'
-        target='_blank' style="color:#f7c82d;font-size: 160%;text-decoration:underline">Koreatech University.</a><p>
-      <p> And I love learning programming and making something.</p>
-      <p> I have been studying data structures and algorithms using Python for 6 months.</p>
-      <p>And recently, I started studying HTML for web programming.</p>
+      <div class='aboutme'>
+        <div class='profile'>
+          <div id="profile">PROFILE</div>
+          <ul>
+            <li><span>EDUCATION</span> : <a href='https://www.koreatech.ac.kr/kor/Main.do'
+              target='_blank' title='Koreatech University home page link'
+              style="color:#fff29c;font-size: 22px;text-decoration:underline">
+              Koreatech University</a></li>
+            <li><span>ADDRESS</span> : Cheonan, South Korea</li>
+            <li><span>INTEREST</span> : Algorithm problems solving, Web programming, Image processing </li>
+            <li><span>GOAl</span> : Web Publisher, Software engineer
+          </ul>
+        </div>
+
+        <div class="introduce">
+          <div id='introduce'>INTRODUCE</div>
+          <p> Hi, I am Han-seokwon. </p>
+          <p> I love programming creative, interesting things.</p>
+          <p> I've been studying data structures and algorithms using Python.</p>
+          <p> Recently, I began studying Web programming.</p>
+          <p> This website is the main place where I practice web programming and experiment with my ideas.</p>
+
+
+        </div>
+      </div>
     </article>
 
-    <article>
-      <a name='Programming language'></a>
-      <h2>Programming language</h2>
-      <br>
-      <p><img src='https://www.python.org/static/community_logos/python-logo.png'
-        alt='Python logo'> Studying data structures and algorithms. </p>
+    <article id='PL'>
+      <div class='Programminglanguage'>
+        <a name='Programming language'></a>
+        <h2>Programming language</h2>
+        <div>
+        <img src='https://www.python.org/static/community_logos/python-logo.png'
+          alt='Python logo'>
+          <p>Studying data structures and algorithms.</p>
+        </div>
 
-      <p><img src='https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png' width='99px'
-          alt='HTML5 logo'>
-          <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/428px-CSS.3.svg.png'
-           width='70px' alt='CSS3 logo'> Just finished basics </p>
+        <div>
+        <img src='https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png' width='99px'
+            alt='HTML5 logo'>
+            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/428px-CSS.3.svg.png'
+             width='70px' alt='CSS3 logo'>
+            <p>Just finished basics and keep practicing</p>
+        </div>
 
-      <p><img src='  https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20190417225046%21The_C_Programming_Language_logo.svg'
-            width='100' alt='C language logo'> Studid only the basics </p>
+        <div>
+          <img src='  https://upload.wikimedia.org/wikipedia/commons/archive/3/35/20190417225046%21The_C_Programming_Language_logo.svg'
+              width='100' alt='C language logo'>
+          <p>Studid only the basics</p>
+        </div>
+      </div>
 
-
-    <article>
+    <article id='contact'>
       <a name='Contact'></a>
-      <h2>Contact</h2>
-      <p><strong>Click the Github logo below to see my Github profile.</strong></p>
-      <p><a href='https://github.com/Han-seokwon'target='_blank'><img src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
-        width="80px" alt='Github logo'></a>Han-seokwon</p>
+      <div class='contact'>
+        <h2>Contact</h2>
+        <div><strong>Click the Github logo below to see my Github profile.</strong></div>
 
-      <p><img src='https://logos-world.net/wp-content/uploads/2020/11/Gmail-Logo.png'
-        width="80px" alt='Gmail logo'> hoh91700001@gmail.com </p>
+        <a href='https://github.com/Han-seokwon'target='_blank'>
+          <img src='https://1000logos.net/wp-content/uploads/2018/11/GitHub-logo-500x452.png'
+          width="100px" alt='Github logo'></a><div>Han-seokwon</div>
 
-      <p><img src=' https://www.koreatech.ac.kr/resources/homepage/kor/_Img/Content/symbol_img01.png'
-        width="55px" alt='Koreatech logo'> hoh9170@koreatech.ac.kr</p>
-    </article>
+        <img src='https://logos-world.net/wp-content/uploads/2020/11/Gmail-Logo.png'
+          width="80px" alt='Gmail logo'> <div>hoh91700001@gmail.com </div>
+
+        <img src=' https://www.koreatech.ac.kr/resources/homepage/kor/_Img/Content/symbol_img01.png'
+          width="55px" alt='Koreatech logo'> <div>hoh9170@koreatech.ac.kr</div>
+        </div>
+      </article>
 
     </article>
 
@@ -156,5 +141,7 @@
   <footer>
     last updated 2021-01-02
   </footer>
+
+</body>
 
 </html>

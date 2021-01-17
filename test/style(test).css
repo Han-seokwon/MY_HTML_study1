@@ -1,7 +1,6 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&family=Ubuntu+Condensed&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
   *{
     margin:0;
     padding:0;
@@ -159,7 +158,9 @@
     align-items: center;
     font-size: 31vw;
     color: transparent;
-    /* -webkit-text-stroke:2px black; */
+    -webkit-text-stroke:2px black;
+    transition: all 1s;
+    transition-delay: 1s;
   }
 
   .about_content{
@@ -167,18 +168,19 @@
     display: flex;
     align-items: center;
     position: relative;
+    line-height:2;
+    font-family: 'Yusei Magic', sans-serif;
   }
 
   .about_content .introduce_container, .about_content .profile_container{
     position: absolute;
     top: 200px;
     height:600px;
-    width: 31vw;
+    width: 35vw;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
   }
 
   .about_content .introduce_container{
@@ -186,57 +188,59 @@
     padding-left: 110px;
     padding-right: 15px;
   }
+
+
   .about_content .profile_container{
     right: 0;
     padding-left: 15px;
     padding-right: 110px;
   }
+
   .about_content .profile_container ul{
     list-style: none;
+    text-align: left;
+  }
+  .about_content .profile_container li{
+    display: flex;
   }
 
-
-  #AM .aboutme{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 200px;
-  }
-
-  #AM .aboutme .profile{
-    margin-left: 20%;
-    border-right: 2px solid #ffffff;
-    padding-right: 10px;
-  }
-
-  #AM .aboutme .profile #profile ,#AM .aboutme .introduce #introduce{
-    font-family: 'Teko', 'sans-serif';
-    font-size:40px;
-    color: #c9c9c9;
-  }
-
-  #AM .aboutme .profile span {
-    font-family: 'Teko', 'sans-serif';
+  .about_content .profile_container span:nth-of-type(1){
     font-size:30px;
-    color: #e3e3e3;
-  }
-
-  #AM .aboutme .profile ul{
-     list-style: none;
-     text-align:left;
-  }
-
-  #AM .aboutme .profile li{
-     padding-bottom: 20px;
-  }
-
-  #AM .aboutme .introduce{
-    margin-right: 25%;
-    padding-left:30px;
-  }
-
-  #AM .aboutme .introduce p{
-      text-align:center;
+    color: #7fd97c;
+    position: relative;
+    top: -11px;
     }
+
+  #introduce_head, #profile_head{
+    font-family: 'Yusei Magic', sans-serif;
+    font-size:40px;
+    color: #7fd97c;
+  }
+
+  .about_content *{
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: 0.5s;
+  }
+
+  .about_container:hover h2{
+    -webkit-text-stroke:2px white;
+    transition-delay: 0s;
+
+  }
+
+  .about_container:hover .about_content *{
+    opacity: 1;
+  }
+
+  .about_container:hover .introduce_container *{
+    
+  }
+
+  .about_container:hover .profile_container *{
+
+  }
+
 
     /*  -----------study------------- */
   .study_container{
@@ -309,11 +313,11 @@
       width:auto;
     }
     .about_content .introduce_container{
-      margin-right: 150px;
+      margin-right: 110px;
     }
     .about_content .profile_container{
       top: 1000px;
-      margin-left: 150px;
+      margin-left: 110px;
     }
 
 
